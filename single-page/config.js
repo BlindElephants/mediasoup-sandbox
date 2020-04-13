@@ -7,8 +7,8 @@ module.exports = {
 
   // ssl certs. we'll start as http instead of https if we don't have
   // these
-  sslCrt: 'local.crt',
-  sslKey: 'local.key',
+  sslCrt: 'cert.pem',
+  sslKey: 'key.pem',
 
   mediasoup: {
     worker: {
@@ -80,8 +80,10 @@ module.exports = {
     webRtcTransport: {
       listenIps: [
        { ip: '127.0.0.1', announcedIp: null },
+	//{ ip: '52.70.32.236', announcedIp: null },
+	{ ip: '172.31.93.25', announcedIp: '3.216.207.112' },
        // { ip: '192.168.42.68', announcedIp: null },
-       { ip: '10.10.23.101', announcedIp: null },
+       //{ ip: '10.10.23.101', announcedIp: null },
       ],
       initialAvailableOutgoingBitrate: 800000,
     }

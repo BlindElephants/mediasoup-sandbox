@@ -1033,7 +1033,8 @@ function makeProducerTrackSelector({ internalTag, container, peerId, producerId,
 const CAM_VIDEO_SIMULCAST_ENCODINGS =
 [
   { maxBitrate:  96000, scaleResolutionDownBy: 4 },
-  { maxBitrate: 680000, scaleResolutionDownBy: 1 },
+  { maxBitrate: 680000, scaleResolutionDownBy: 2 },
+  { maxBitrate: 2000000,scaleResolutionDownBy: 1 },
 ];
 
 function camEncodings() {
